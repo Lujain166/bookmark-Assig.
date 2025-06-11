@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="./all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="container">
+    <h1 class="main-title py-2 position: relative ">Bookmarker</h1>
+    <div class="dashed-line"></div>
+    
+    <p class="subtitle gradient-text">
+        📗 Bookmark your favorite sites 📗</p>
+
+    <div class="form-group">
+      <label for="bookmarkName">💾 Site Name</label>
+      <input type="text" id="bookmarkName" placeholder="Bookmark Name" />
+    </div>
+
+    <div class="form-group">
+      <label for="bookmarkURL">🔗 Site URL</label>
+      <input type="text" id="bookmarkURL" placeholder="Website URL" />
+    </div>
+
+    <button onclick="addBookmark()" class="btn-submit">Submit</button>
+    <div class="dashed-line"></div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="bookmarksTable"></tbody>
+    </table>
+
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
